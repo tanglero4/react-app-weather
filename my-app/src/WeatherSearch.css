@@ -1,0 +1,46 @@
+h1 {
+    color: skyblue;
+    font-size: 45px;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li:firstLetter {
+    text-transform: capitalize;
+  }
+
+  .weatherBackground {
+    padding: 25px;
+    border: 1px solid skyblue;
+    margin: 20px;
+    border-radius: 25px;
+    max-width: 100%;
+  }
+  .main {
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  .searchText {
+    border-radius: 5px;
+    border-color: skyblue;
+  }
+  .searchButton {
+    background-color: skyblue;
+    border: none;
+    border-radius: 5px;
+  }
+  .searchButton:hover {
+    color: skyblue;
+    background-color: white;
+    transition: 200ms ease-in-out;
+  }
+  
