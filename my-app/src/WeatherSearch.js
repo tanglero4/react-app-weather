@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import './WeatherSearch.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 export default function WeatherSearch() {
   let [city, setCity] = useState("");
@@ -65,20 +66,36 @@ export default function WeatherSearch() {
     return (
       <div className="main">
       <div className="weatherBackground">
-      <h1>Weather App 🌡</h1>
-        {form}
+          <div class="row">
+              <div class="col-6">
+                  <h1>🌡25°C</h1>
+              </div>
+              <div class="col-6">
+              {form}
+              </div>
+          </div>
+          <div class="container">
+    <div class="row">
+        <div class="col">
+<h1>Today</h1>
+<h2>Sunday 16:50</h2>
+</div>
+<div class="col">
+            <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="Weather icon"/>
+</div>
+<div class="col">
         <ul>
-          <li>Temperature: 25°C</li>
           <li>Description: Clear Sky</li>
           <li>Humidity: 15 %</li>
           <li>Wind: 2 Km/h</li>
-          <li>
-            {" "}
-            <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="Weather icon"/>
-          </li>
+          
         </ul>
+        </div>
+        </div>
+        </div>
       </div>
       </div>
-    )
+      
+    );
   }
 }
