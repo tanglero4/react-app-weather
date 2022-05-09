@@ -93,9 +93,49 @@ export default function WeatherSearch() {
         </div>
         </div>
         </div>
+        <div className="Forecast">
+        <div class="container">
+        <div class="row">
+        <div class="col-2">
+        <div >Monday</div>
+        <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="Weather icon"/>
+            <div class="weather-forcast-temperature">
+              <span class="weather-forecast-max">20° C </span>|
+              <span class="weather-forecast-min">18° C</span>
+            </div>
+    </div>
+    <div class="col-2">
+        <div >Tuesday</div>
+        <img src="http://openweathermap.org/img/wn/09n@2x.png" alt="Weather icon"/>
+            <div class="weather-forcast-temperature">
+              <span class="weather-forecast-max">17° C </span>|
+              <span class="weather-forecast-min">15° C</span>
+            </div>
+    </div>
+    <div class="col-2">
+        <div >Wednesday</div>
+        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather icon"/>
+            <div class="weather-forcast-temperature">
+              <span class="weather-forecast-max">22° C </span>|
+              <span class="weather-forecast-min">17° C</span>
+            </div>
+    </div>
+    <div class="col-2">
+        <div >Thursday</div>
+        <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="Weather icon"/>
+            <div class="weather-forcast-temperature">
+              <span class="weather-forecast-max">21° C </span>|
+              <span class="weather-forecast-min">19° C</span>
+            </div>
+    </div>
+
+
+    </div>
+</div>
+</div>
       </div>
       </div>
-      
+
     );
-  }
+  } 
 }
